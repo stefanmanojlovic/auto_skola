@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
+<!--    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">-->
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <!-- Tabs Titles -->
+
+        <!-- Icon -->
+        <div class="fadeIn first">
+            <img src="images/registration.png" id="icon" alt="User Icon" />
+        </div>
+
+        <!-- Login Form -->
+        <form action="/registration" method="post">
+            <input type="text"  name="ime" class="fadeIn second" placeholder="Ime" required>
+            <input type="text"  name="prezime" class="fadeIn second" placeholder="Prezime" required>
+            <input type="text"  name="broj_telefona" class="fadeIn third" placeholder="Broj Telefona" required>
+            <input type="text"  name="datum_rodjenja" class="fadeIn third" placeholder="Datum Rodjenja" required>
+            <input type="text"  name="jmbg" class="fadeIn third" placeholder="JMBG" required>
+            <input type="text" name="email" class="fadeIn second" placeholder="E-mail" required>
+            <input type="password"  name="sifra" class="fadeIn third" placeholder="Sifra" required>
+            <input type="submit" class="fadeIn fourth" value="Potvrdi registraciju">
+        </form>
+
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+            <a class="underlineHover" href="/login">Vrati se na prijavu</a>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<!--<script type="text/javascript" src="/jquery.js"></script>-->
+<!--<script type="text/javascript" src="/js/bootstrap.js"></script>-->
+</body>
+</html>
