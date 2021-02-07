@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jan 31, 2021 at 10:11 PM
+-- Generation Time: Feb 07, 2021 at 05:37 PM
 -- Server version: 8.0.18
 -- PHP Version: 7.3.12
 
@@ -130,7 +130,7 @@ CREATE TABLE IF NOT EXISTS `korisnici` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `jmbg` (`jmbg`),
   UNIQUE KEY `e-mail` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `korisnici`
@@ -138,7 +138,8 @@ CREATE TABLE IF NOT EXISTS `korisnici` (
 
 INSERT INTO `korisnici` (`id`, `ime`, `prezime`, `broj_telefona`, `datum_rodjenja`, `jmbg`, `email`, `sifra`) VALUES
 (1, 'Mika', 'Mikic', '123123123', '02.12.1998.', '0212998732514', 'mika@gmail.com', '123123'),
-(11, 'Aleksa', 'Nejković', '0600326267', '27.06.1998.', '2706998712411', 'admin@gmail.com', '1245');
+(12, 'Stefan', 'Manojlovic', '0601234567', '13.12.1998.', '1312998732511', 'stefan@gmail.com', '1234'),
+(13, 'Nikola', 'Igic', '0653312245', '21.12.1998.', '2112998434333', 'nikola@gmail.com', '1234');
 
 -- --------------------------------------------------------
 
@@ -155,18 +156,7 @@ CREATE TABLE IF NOT EXISTS `test_stats` (
   PRIMARY KEY (`id`),
   KEY `fk_pitanja` (`fk_pitanja`),
   KEY `fk_korisnici` (`fk_korisnici`)
-) ENGINE=InnoDB AUTO_INCREMENT=382 DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `test_stats`
---
-
-INSERT INTO `test_stats` (`id`, `fk_pitanja`, `rezultat`, `fk_korisnici`) VALUES
-(377, 11, 'Netačno', 11),
-(378, 15, 'Tačno', 11),
-(379, 6, 'Netačno', 11),
-(380, 1, 'Netačno', 11),
-(381, 10, 'Netačno', 11);
+) ENGINE=InnoDB AUTO_INCREMENT=413 DEFAULT CHARSET=utf8;
 
 --
 -- Constraints for dumped tables
